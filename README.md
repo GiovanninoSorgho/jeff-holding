@@ -3,7 +3,7 @@ Web mobilier en React-bootstrap
 
 Afin d'ouvrir puis executer le projet, faudrait suivre les etapes suivante :
 
-1) Telecharger le le fichier zip de la branche main
+1) Telecharger le fichier zip de la branche main
 
 3) Ouvrir le fichier sur Visual Studio Code
 
