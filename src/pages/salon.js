@@ -16,57 +16,119 @@
 // import { Component } from 'react';
 
 import React, { Component } from 'react'
-import { NavBar } from '../components/NavBar';
+import { Carousel } from "react-bootstrap";
+import s3 from "../assets/s3.jpg"
+import s2 from "../assets/s2.jpg"
+import s4 from "../assets/s4.jpg"
+import s5 from "../assets/s5.jpg"
+import s6 from "../assets/s6.jpg"
 
 
-export default class salon extends Component {
+
+export default class Salon extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+          {/* Salon------------------------------------------------------ */}
 
+
+      <Carousel slide={false}>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={s3}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>Salon</h3>
+            <p>Un confort assurer pour votre salon.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+
+
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="col-lg-6"><img class="img-fluid" src={s2} alt="..." /></div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Salon KOUBRI</h4>
+                <p class="mb-0 text-white-50">Doter d'un total de 12 places, ce salon reunis confort et luxe. Vous etes a la recherche de deux salon au prix d'un ? Koubri est fais pour vous .</p>
+                <hr class="d-none d-lg-block mb-0 ms-0" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+
+
+      <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6"><img class="img-fluid" src={s4} alt="..." /></div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Salon PISSI</h4>
+                <p class="mb-0 text-white-50">Reunissant ambiance chaleureuse et detente, ce salon saura vous gardez dans une humeur positive.</p>
+                <hr class="d-none d-lg-block mb-0 me-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="col-lg-6"><img class="img-fluid" src={s5} alt="..." /></div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Salon DORI</h4>
+                <p class="mb-0 text-white-50">Salon simple et sophistiquer emmene une touche de rafiner a votre environement.</p>
+                <hr class="d-none d-lg-block mb-0 ms-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6"><img class="img-fluid" src={s6} alt="..." /></div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Salon FRAMBOISE</h4>
+                <p class="mb-0 text-white-50">Haut de gamme, le salon Framboise saura entretenir votre position lombaire et vous preserver des courbature.</p>
+                <hr class="d-none d-lg-block mb-0 me-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        
+          <div class="bg-white text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-black">Votre confort, notre prioriter.</h4>
+                <p class="mb-0 text-black-50">@JeffHoldingCorporation.</p>
+                <hr class="d-none d-lg-block mb-0 ms-0" />
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      </div>
     )
   }
 }
 
-
-
-// export default class salon extends Component{
-//     render(){
-
-    
-//     return (
-//         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-//             {/* <div class="col-lg-6"><img class="img-fluid" src={wooom} alt="..." /></div>
-//                     <div class="col-lg-6">
-//                         <div class="bg-black text-center h-100 project">
-//                             <div class="d-flex h-100">
-//                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-//                                     <h4 class="text-white">WOOOM</h4>
-//                                     <p class="mb-0 text-white-50">D'une part, le caractère cosy et l'intimité favorisent l'inspiration. D'autre part, l'équipement de bureau conventionnel facilite le travail pratique. WOOOM réunit ces deux univers. Il combine un travail détendu et concentré avec des fonctionnalités ultramodernes – au service d'une efficacité maximale.   </p>
-//                                     <hr class="d-none d-lg-block mb-0 ms-0" />
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div> */}
-
-//             <div class="row gx-0 justify-content-center">
-//                 <div class="col-lg-6"><img class="img-fluid" src={moteo} alt="..." /></div>
-//                 <div class="col-lg-6 order-lg-first">
-//                     <div class="bg-black text-center h-100 project">
-//                         <div class="d-flex h-100">
-//                             <div class="project-text w-100 my-auto text-center text-lg-right">
-//                                 <h4 class="text-white">Moteo</h4>
-//                                 <p class="mb-0 text-white-50">Fauteuil de bureau haut de gamme Klöber, FASCINATION MOTEO89 est un fauteuil de direction design, Un siège ergonomique et technique.</p>
-//                                 <hr class="d-none d-lg-block mb-0 me-0" />
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );  
-// }
-// }
