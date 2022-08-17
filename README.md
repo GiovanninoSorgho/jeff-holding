@@ -30,4 +30,4 @@ Afin d'ouvrir puis executer le projet, faudrait suivre les etapes suivante :
 
 5) Executer la commande "npm start"
 
-6)Attendre que la commande s'execute. Le site web s'ouvrira sur votre navigateur.
+6) Attendre que la commande s'execute. Le site web s'ouvrira sur votre navigateur.
